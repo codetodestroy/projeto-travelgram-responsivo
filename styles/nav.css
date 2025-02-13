@@ -10,6 +10,10 @@ nav ul {
     gap: 1rem;
 }
 
+nav ul li:first-child:has(:hover) svg path {
+    fill: var(--brand-color);
+}
+
 nav ul li img[alt="Perfil"] {
     width: 2.5rem;
     height: 2.5rem;
@@ -18,7 +22,6 @@ nav ul li img[alt="Perfil"] {
 @media (width >= 80em) {
     nav ul {
         gap: 1.25rem;
-        
     }
 
     nav ul li:first-child a {
