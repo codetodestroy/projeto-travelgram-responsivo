@@ -1,37 +1,26 @@
 footer {
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-
-    font-size: var(--font-size-small);
-
     padding-block: 1rem;
-
-    color: var(--text-color-secondary);
 }
 
-footer span:first-child {
-    grid-column: 1/-1;
+footer > span {
+    display: block;
     text-align: center;
+
+    padding-bottom: 1rem;
 }
 
-footer span:nth-child(2) {
-    justify-self: center;
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 @media (width >= 80em) {
     footer {
-        grid-template-columns: 1fr auto auto;
-        padding-block: 1.5rem;
-        gap: initial !important;
+        display: flex;
     }
 
-    footer span:first-child {
-        grid-column: initial;
-        text-align: left;
-    }
-
-    footer span:nth-child(2) {
-        margin-right: 1.25rem;
-        justify-self: baseline;
+    footer div {
+        margin-left: auto;
     }
 }
