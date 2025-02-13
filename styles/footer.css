@@ -2,6 +2,10 @@ footer {
     padding-block: 1rem;
 }
 
+footer span {
+    font-size: var(--font-size-small);
+}
+
 footer > span {
     display: block;
     text-align: center;
