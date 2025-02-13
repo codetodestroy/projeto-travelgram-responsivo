@@ -1,0 +1,27 @@
+nav {
+    justify-content: space-between;
+}
+
+nav img {
+    display: block; 
+}
+
+nav ul {
+    gap: 1rem;
+}
+
+nav ul li img[alt="Perfil"] {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+@media (width >= 80em) {
+    nav ul {
+        gap: 1.25rem;
+        
+    }
+
+    nav ul li:first-child a {
+        gap: 0.5rem;
+    }
+}
