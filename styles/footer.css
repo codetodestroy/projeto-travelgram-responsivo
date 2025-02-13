@@ -1,0 +1,27 @@
+footer {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    font-size: var(--font-size-small);
+
+    padding-block: 1rem;
+
+    color: var(--text-color-secondary);
+}
+
+footer span:first-child {
+    grid-column: 1/-1;
+}
+
+@media (width >= 80em) {
+    footer {
+        grid-template-columns: 1fr auto auto;
+        gap: 1.25rem;
+        justify-items: flex-start;
+        padding-block: 1.5rem;
+    }
+
+    footer span:first-child {
+        grid-column: initial;
+    }
+}
